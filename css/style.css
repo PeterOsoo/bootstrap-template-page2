@@ -1,5 +1,6 @@
 /*-- Reset --*/
-html, body {
+html,
+body {
   overflow-x: hidden;
   height: 100%;
   width: 100%;
@@ -9,7 +10,31 @@ html, body {
 
 /*============= NAVIGATION =============*/
 
+.navbar-brand img {
+  height: 2.8rem;
+}
 
+.navbar {
+  background: linear-gradient(to right, #f2f2f2, #FBFBFB);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .5);
+
+}
+
+.nav-item {
+  padding: .4rem;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #396afc !important;
+}
 
 /*============= CAROUSEL =============*/
 
@@ -43,8 +68,9 @@ html, body {
   border-top: .05rem solid black;
   border-bottom: .05rem solid black;
   margin-bottom: 2px;
-  height: 100vh; /*-- remove --*/
+
 }
+
 .fixed {
   background-image: url('../img/imac.jpg');
   position: fixed;
@@ -62,21 +88,16 @@ html, body {
 /*============= MEDIA QUERIES =============*/
 
 /* Devices under 1199px (xl) */
-@media (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {}
 
-}
 /* Devices under 992px (xl) */
-@media (max-width: 991.98px) {
+@media (max-width: 991.98px) {}
 
-}
 /* Devices under 768px (md) */
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px) {}
 
-}
 /* Devices under 576px (sm) */
-@media (max-width: 575.98px) {
-
-}
+@media (max-width: 575.98px) {}
 
 
 /*============ BOOTSTRAP BREAK POINTS:
@@ -99,7 +120,8 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 /*-- Bootstrap Mobile Gutter Fix --*/
-.row, .container-fluid {
+.row,
+.container-fluid {
   margin-left: 0px !important;
   margin-right: 0px !important;
 }
@@ -108,8 +130,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 .fixed-background {
   position: relative;
   width: 100%;
-  z-index: 1000!important;
+  z-index: 1000 !important;
 }
+
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
   position: absolute;
@@ -119,8 +142,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
   height: 100%;
   z-index: -999 !important;
 }
+
 .fixed {
-  z-index: -999!important;
+  z-index: -999 !important;
   display: block;
   top: 0;
   left: 0;
