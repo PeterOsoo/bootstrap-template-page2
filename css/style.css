@@ -117,7 +117,9 @@ ul.social li {
 
 /*============= COLUMN CONTENT =============*/
 
-
+.fa-square {
+  opacity: .05;
+}
 
 /*===== FIXED BACKGROUND IMG =====*/
 
