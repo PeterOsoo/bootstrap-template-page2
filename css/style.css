@@ -19,7 +19,7 @@ body {
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .5);
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
 
 }
 
@@ -38,13 +38,52 @@ body {
 
 /*============= CAROUSEL =============*/
 
-
+.carousel-inner {
+  height: 40rem !important;
+}
 
 /*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item.prev,
+.carousel-item.active {
+  transition: transform 1.2s ease;
+}
 
+.carousel-indicators li {
+  width: 40px;
+  height: 6px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
 
 /*-- Carousel Content --*/
+.carousel-caption {
+  position: absolute;
+  top: 47%;
+  transform: translateY(-50%);
 
+}
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, .7) !important;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.bg-white {
+  background-color: rgba(255, 255, 255, .65) !important;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.carousel-caption h3 {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+p.lead {
+  font-size: 1.4rem;
+}
 
 /*============= SOCIAL MEDIA STICKY BAR =============*/
 
@@ -56,6 +95,25 @@ body {
   box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
 }
 
+ul.social {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+}
+
+ul.social li {
+  margin: 0 auto;
+}
+
+.jumbotron .svg-inline--fa {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.jumbotron .svg-inline--fa:hover {
+  color: grey !important;
+}
 
 /*============= COLUMN CONTENT =============*/
 
